@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Contate-nos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img/jpg" href="logo.svg">
+  <link rel="stylesheet" href="relogio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="logo.svg">
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="#"><img src="img/brazil.png" width="100%" id="pt"></a></li>
+        <li><a href="contact.html"><img src="img/eua.png" width="100%" id="en"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="modelo.html">Modelo</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="al">
+    <div class="container">
+      <div class="conteudo">
+        <div class="infos">
+          <div class="end detalhe">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topico">Endereço</div>
+            <div class="texto1">Rua Capitão Lourival Mey, 750</div>
+            <div class="texto2">Remanso Campineiro, Hortolândia</div>
+          </div>
+          <div class="tel detalhe">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topico">Telefone</div>
+            <div class="texto1">+55 19 3897-5935</div>
+          </div>
+          <div class="email detalhe">
+            <i class="fas fa-envelope"></i>
+            <div class="topico">Email</div>
+            <div class="texto1">samuel.rodrigues61@etec.sp.gov.br</div>
+          </div>
+        </div>
+        <div class="pr">
+          <div class="tptx">Envie sua mensagem</div>
+          <p>
+            Se você tiver qualquer tipo de dúvida relacionado ao site, você pode me enviar mensagem aqui. É um prazer
+            ajudá-lo.
+          </p>
+          <form action="msg.html" id="formulario" method="POST">
+            <div class="form">
+              <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+              <span id="nomeErro" class="erro"></span>
+            </div>
+            <div class="form">
+              <input type="email" id="email" name="email" required placeholder="Digite seu email">
+              <span id="emailErro" class="erro"></span>
+            </div>
+            <div class="form">
+              <input type="text" id="celular" name="celular" pattern="\d{10,}" required placeholder="Digite seu número">
+              <span id="celularErro" class="erro"></span>
+            </div>
+            <div class="form msg">
+              <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+              <span id="mensagemErro" class="erro"></span>
+            </div>
+            <div class="button">
+              <button type="submit" id="submitButton">Enviar</button>
+              <button type="reset" id="resetButton">Limpar</button>
+            </div>
+          </form>
+          <span id="mensagemErro" class="erro"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footerct">
+    <div id="txt-ft">
+      <p id="pf1">2023 - Samuel Rodrigues - &copy; Todos os direitos reservados.</p>
+      <p id="pf2">Trabalho escolar - Sem fins lucrativos.</p>
+    </div>
+  </footer>
+
+  <i class="bi bi-arrow-up-circle" id="btop" alt="Voltar ao Topo"></i>
+
+
+
+</body>
+
+</html>
